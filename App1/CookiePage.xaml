@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="App1.CookiePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Title panel-->
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="COOKIWIKIE" Style="{StaticResource TitleTextBlockStyle}" Margin="10,0,0,0"/>
+            <TextBlock TextWrapping="NoWrap" Text="chocolate chip cookie" TextTrimming="CharacterEllipsis" Margin="10, 0, 0, 30" Style="{StaticResource HeaderTextBlockStyle}"/>
+        </StackPanel>
+        
+        <Grid Margin="10, 0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150*"/>
+                <RowDefinition Height="155*"/>
+            </Grid.RowDefinitions>
+            <Image Source="Assets/ChocolateChip.png" />
+            <ScrollViewer Grid.Row="1">
+                <TextBlock Text="A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient. The traditional recipe combines a dough composed of butter and both brown and white sugar with semi-sweet chocolate chips. Variations include recipes with other types of chocolate as well as additional ingredients such as nuts or oatmeal." Style="{StaticResource BodyTextBlockStyle}" Height="Auto"/>   
+            </ScrollViewer>
+            
+            
+
+
+        </Grid>
+
+
+    </Grid>
+</Page>
